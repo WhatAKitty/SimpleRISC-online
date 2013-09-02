@@ -1,0 +1,16 @@
+body{background:#300; color:#fff;font-family:Helvetica}
+h1, h2, h3, h4, h5, h6 {font-weight:normal}
+table#registers{background:#633; font-weight:normal;padding:10px }
+table#registers th{font-weight:normal}
+#terminal{
+	padding:10px;
+	background:#000;
+	color:#fff;
+	resize:none;
+	width:500px;
+	height:200px;
+}
+input{
+	border:1px inset #333;
+	background:#ccc;
+}
