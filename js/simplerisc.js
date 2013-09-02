@@ -9,7 +9,16 @@ function compile(code){
 	}
 }
 function run(inst, args){
-	console.log(args);
+	switch(inst){
+		case 1:
+			if(args.length != 2)
+				alert("Error Occured.");
+			break;
+		case 2:
+			break;
+		default:
+			break;
+	}
 }
 var RISC = function(code){
 	if(code.split("\n").length == 1)
@@ -19,9 +28,5 @@ var RISC = function(code){
 	}
 }
 var insts = ["mov", "add", "sub"];
-var a = "mov r1, 12\nmov r2, 14";
-var input = document.editwin.codebox;
-var output = document.getElementById('terminal');
-input.value = a;
-compile(input.value);
-output.value += "\n"+"vibhav@risc$ "
+var input = myCodeMirror.getValue();
+compile(input);
